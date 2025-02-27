@@ -1,0 +1,48 @@
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+#sidebar-wrapper {
+    width: 250px;
+    background: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+}
+#page-content-wrapper {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: -250px;
+}
+.sidebar-heading {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.list-group-item {
+    border: none;
+}
+@media (max-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: -250px;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: 0;
+    }
+}
+
+.card {
+    margin-bottom: 20px; /* Menambahkan margin bawah pada kartu */
+    transition: box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Warna hitam dengan transparansi 10% */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Warna hitam dengan transparansi 20% */
+    cursor: pointer;
+}
+

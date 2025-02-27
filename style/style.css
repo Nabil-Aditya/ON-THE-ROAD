@@ -1,0 +1,230 @@
+.mb-10 {
+    margin-bottom: 5px;
+}
+
+/* Styling untuk tombol "Masuk" */
+.navbar .btn-masuk {
+    background-color: rgb(250, 117, 1) !important; /* Warna oranye */
+    color: white !important; /* Teks putih */
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover efek untuk tombol "Masuk" */
+.navbar .btn-masuk:hover {
+    background-color: white !important; /* Background menjadi putih saat hover */
+    color: rgb(250, 117, 1) !important; /* Teks berubah jadi oranye saat hover */
+    text-decoration: none;
+}
+
+/* Styling standar untuk link lain */
+.navbar .nav-link {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #f1f1f1; /* Efek hover link lain */
+    text-decoration: none;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer h5 {
+    color: #f8f9fa;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #d1d1d1;
+}
+
+.footer a {
+    color: #d1d1d1;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #ff6f00; /* Warna oranye saat hover */
+    text-decoration: none;
+}
+
+/* Styling ikon sosial media */
+.footer .list-inline-item {
+    margin-right: 15px;
+}
+
+.footer .list-inline-item a {
+    font-size: 20px;
+}
+
+.footer .list-inline-item a:hover {
+    color: #ff6f00; /* Warna oranye saat ikon di-hover */
+}
+
+/* Media query untuk tampilan mobile */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+    .footer .row > div {
+        margin-bottom: 20px;
+    }
+}
+
+/* Hero Image styling */
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust this based on your preference */
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    font-size: 3rem; /* Adjust font size for the text */
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+}
+
+.thumbnail img {
+    width: 150px;  /* Mengatur lebar gambar */
+    height: 150px; /* Mengatur tinggi gambar agar sama */
+    border-radius: 50%; /* Membuat gambar menjadi bulat sempurna */
+    object-fit: cover; /* Membuat gambar tetap terpusat dan fit dalam lingkaran */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow default */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.thumbnail:hover img {
+    transform: scale(1.05); /* Zoom saat hover */
+    box-shadow: 0 8px 16px rgba(255, 111, 0, 0.7); /* Box shadow oranye saat hover */
+}
+
+.thumbnail:hover {
+    box-shadow: 0 8px 16px rgba(255, 111, 0, 0.7); /* Shadow oranye untuk thumbnail saat hover */
+}
+
+/* Optional: Gaya untuk memperbaiki margin atau padding */
+.container.mt-5 {
+    margin-top: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#typing-text {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #333; /* Warna teks typing */
+}
+
+ul li i {
+    color: #ff6347; /* Warna ikon lokasi */
+    margin-right: 10px;
+}
+
+/* Gaya umum untuk gallery-container */
+.gallery-container {
+    padding: 20px;
+}
+
+.gallery-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Gaya untuk setiap item galeri */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    border-radius: 5px; /* Border radius untuk gambar */
+    transition: all 0.3s ease; /* Transisi halus untuk efek hover */
+}
+
+/* Efek hover untuk gambar */
+.gallery-item img:hover {
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.5); /* Box shadow warna oranye */
+    transform: scale(1.05); /* Zoom sedikit pada hover */
+}
+
+.product-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.product-card .caption {
+    padding: 15px;
+}
+
+.product-card .cta-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #28a745;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-card .cta-buttons a:hover {
+    background-color: #218838;
+    color: #f1f1f1;
+}
+
+/* Additional styling for text */
+.product-card .caption h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
